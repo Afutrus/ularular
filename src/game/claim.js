@@ -15,11 +15,10 @@ const VAULT_ABI = [
 ]
 
 export function voucherUrl() {
-  // Production: baked at build time (VITE_VOUCHER_URL=https://api.snakestack.lol/voucher).
-  // No host/port fallback — nothing infra-related may leak into the bundle.
-  const u = import.meta.env?.VITE_VOUCHER_URL
-  if (!u) throw new Error('voucher backend not configured')
-  return String(u)
+  // The build may override this with VITE_VOUCHER_URL, but production has a safe default.
+  // Keep this as the API origin; requestVoucher() appends /voucher exactly once.
+  const u = import.meta.env?.VITE_VOUCHER_URL || 'https://api.snakestack.lol'
+  return String(u).replace(/\/+$/, '')
 }
 
 export async function getVaultInfo() {
