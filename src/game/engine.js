@@ -9,10 +9,9 @@ export const TOKEN_SYMBOL = '$PONS'
 export const TOKEN_NAME = 'Pons'
 export const TOKEN_CA = '0x39dBED3a2bd333467115dE45665cC57F813C4571'
 // Official token of SnakeStack ($STAK) — project token.
-// DEPLOY SLOT: after deploying, set STACK_CA to the new contract address, then rebuild.
 export const STACK_SYMBOL = '$STAK'
 export const STACK_NAME = 'Stak'
-export const STACK_CA = 'TBD'
+export const STACK_CA = '0x863dc527a5fb06c423a802bc32567257cd3f4c03'
 export const TOKEN_DECIMALS = 3
 
 // Per-bubble PONS: normal 0.001–0.005, gold 10x (0.01–0.05). 3 decimals.
