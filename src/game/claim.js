@@ -2,7 +2,7 @@
 // Player pays gas. Node-safe (window access is lazy inside functions).
 import { BrowserProvider, Contract, JsonRpcProvider, formatEther } from 'ethers'
 
-export const VAULT_CA = '0x99bc672B3FB912ECB879aaD2E1042BE0835a9f13'
+export const VAULT_CA = '0xA0dCF6D8FAa41a4272a124611Af9d28219eD4170'
 const PONS = '0x39dBED3a2bd333467115dE45665cC57F813C4571'
 const RPC = 'https://rpc.mainnet.chain.robinhood.com'
 
